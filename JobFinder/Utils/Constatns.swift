@@ -22,5 +22,5 @@ struct AppConfig {
     //For some providers you can identify page number of data in each page,
     //you can edit the number from here, but on the other hand some providers don't
     //provide user controll in data size like GitHub, they force you in 50 job a time.
-    static let dataSizeInPage = 10
+    static let dataSizeInPage = 50
 }
