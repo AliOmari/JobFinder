@@ -1,8 +1,8 @@
 # JobFinder
 
 
-### JobFinder is an iOS application uses third party providers to search for job.
-### This application written in Swift using VIPER design pattern.
+#### JobFinder is an iOS application uses third party providers to search for job.
+#### This application written in Swift using VIPER design pattern.
 
 ## Installation:
 1. Install pods using "pod install".
@@ -22,9 +22,8 @@
 
 - Now let's take a look at one of these objects to describe it's properties.
 
-{
 
-### Request Parameters for Github  https://jobs.github.com/api
+### Request Parameters for Github  [GitHub jobs API](https://jobs.github.com/api)
 
 - description — A search term, such as "ruby" or "java". This parameter is aliased to search.
 - location — A city name, zip code, or other location search term.
@@ -46,23 +45,23 @@
 "pageSize": null,
 "pagination": "page",                                                               
 "fromRecord": null
-},
+}
 ```
 ### Response Parameters for GitHub
 ```json
- {
- "id": "126c5b80-d626-11e8-9e0e-830fc841cb6b",
- "type": "Full Time",
- "url": "https://jobs.github.com/positions/126c5b80-d626-11e8-9e0e-830fc841cb6b",
- "created_at": "Mon Oct 22 18:13:39 UTC 2018",
- "company": "Resonate Capital, LLC",
- "company_url": null,
- "location": "San Francisco, CA",
- "title": "Data Engineer, Hedge Fund",
- "description": "job description",
- "how_to_apply": "\u003cp\u003ePlease send your resume to \u003ca href=\"mailto:resume@resonatecap.com\"\u003eresume@resonatecap.com\u003c/a\u003e\u003c/p\u003e\n",
- "company_logo": null
- }
+{
+"id": "126c5b80-d626-11e8-9e0e-830fc841cb6b",
+"type": "Full Time",
+"url": "https://jobs.github.com/positions/126c5b80-d626-11e8-9e0e-830fc841cb6b",
+"created_at": "Mon Oct 22 18:13:39 UTC 2018",
+"company": "Resonate Capital, LLC",
+"company_url": null,
+"location": "San Francisco, CA",
+"title": "Data Engineer, Hedge Fund",
+"description": "job description",
+"how_to_apply": "\u003cp\u003ePlease send your resume to \u003ca href=\"mailto:resume@resonatecap.com\"\u003eresume@resonatecap.com\u003c/a\u003e\u003c/p\u003e\n",
+"company_logo": null
+}
 ```
 
 ### Application Keys Mapper
@@ -76,7 +75,6 @@
 "postDateFormat": "EEE MMM dd HH:mm:ss Z yyyy",
 "url": "url"
 }
-}
 ```
 
 ## Change page size or date format 
@@ -86,6 +84,6 @@
 
 
 
-#### Best regards
-#### Ali Omari
-#### iOS developer
+##### Best regards
+##### Ali Omari
+##### iOS developer
