@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vSB-CE-3su">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Find Jobs-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="FindJobViewController" id="BYZ-38-t0r" customClass="FindJobViewController" customModule="JobFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Job title, position" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lVg-Wd-DNq">
+                                <rect key="frame" x="30" y="166" width="315" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="qN9-xn-yGq"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="positionTextDidChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="5QS-NW-JUN"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QC1-ZO-a3u">
+                                <rect key="frame" x="30" y="226" width="315" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="qRM-vq-WTg"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="locationDidBeginEditing:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="CQ8-8R-zms"/>
+                                </connections>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZZ-ZX-lCx">
+                                <rect key="frame" x="30" y="282" width="315" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="a10-xA-mah"/>
+                                </constraints>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ikb-kp-md5">
+                                <rect key="frame" x="30" y="567" width="315" height="50"/>
+                                <color key="backgroundColor" red="0.066020238795815062" green="0.13371854334077957" blue="0.824198921319797" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4x4-Uo-B26"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="searchAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EG9-xz-gkP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QC1-ZO-a3u" firstAttribute="top" secondItem="lVg-Wd-DNq" secondAttribute="bottom" constant="20" id="B0B-U1-QKP"/>
+                            <constraint firstItem="lVg-Wd-DNq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="EWj-Gk-Rku"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lVg-Wd-DNq" secondAttribute="trailing" constant="30" id="YaV-YT-Yh7"/>
+                            <constraint firstItem="AZZ-ZX-lCx" firstAttribute="trailing" secondItem="QC1-ZO-a3u" secondAttribute="trailing" id="bXm-wZ-L1P"/>
+                            <constraint firstItem="lVg-Wd-DNq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="hjA-Lo-KSa"/>
+                            <constraint firstItem="AZZ-ZX-lCx" firstAttribute="top" secondItem="QC1-ZO-a3u" secondAttribute="bottom" constant="16" id="jI2-9U-oRy"/>
+                            <constraint firstItem="ikb-kp-md5" firstAttribute="leading" secondItem="AZZ-ZX-lCx" secondAttribute="leading" id="kTI-te-ipf"/>
+                            <constraint firstItem="QC1-ZO-a3u" firstAttribute="trailing" secondItem="lVg-Wd-DNq" secondAttribute="trailing" id="qGr-QN-vO5"/>
+                            <constraint firstItem="ikb-kp-md5" firstAttribute="trailing" secondItem="AZZ-ZX-lCx" secondAttribute="trailing" id="qgb-9u-zYa"/>
+                            <constraint firstItem="QC1-ZO-a3u" firstAttribute="leading" secondItem="lVg-Wd-DNq" secondAttribute="leading" id="v9g-Jg-nc4"/>
+                            <constraint firstItem="AZZ-ZX-lCx" firstAttribute="leading" secondItem="QC1-ZO-a3u" secondAttribute="leading" id="wCT-Gu-PCl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ikb-kp-md5" secondAttribute="bottom" constant="50" id="zsv-gV-8Cd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Find Jobs" id="DA8-ca-A2T"/>
+                    <connections>
+                        <outlet property="btnSearch" destination="ikb-kp-md5" id="wDF-4g-XVk"/>
+                        <outlet property="pickerProviders" destination="AZZ-ZX-lCx" id="1qt-jf-Gdb"/>
+                        <outlet property="txtLocation" destination="QC1-ZO-a3u" id="Cvx-WJ-miw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1168.8" y="-564.46776611694156"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="GtH-Tw-ocd">
+            <objects>
+                <navigationController storyboardIdentifier="MainNavigation" automaticallyAdjustsScrollViewInsets="NO" id="vSB-CE-3su" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="56k-rG-64V">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZiM-vs-wez"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HFs-AH-KKQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="437.60000000000002" y="-564.46776611694156"/>
+        </scene>
+        <!--Jobs-->
+        <scene sceneID="cmF-PO-nsx">
+            <objects>
+                <viewController storyboardIdentifier="JobsViewController" title="Jobs" id="haB-xU-zu5" customClass="JobsViewController" customModule="JobFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wVE-2U-UFX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t3s-my-7U3">
+                                <rect key="frame" x="5" y="20" width="365" height="647"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="haB-xU-zu5" id="eAJ-0h-amR"/>
+                                    <outlet property="delegate" destination="haB-xU-zu5" id="zvj-0S-mHE"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="t3s-my-7U3" firstAttribute="leading" secondItem="47B-xW-8JN" secondAttribute="leading" constant="5" id="2Hz-bs-8s6"/>
+                            <constraint firstItem="47B-xW-8JN" firstAttribute="bottom" secondItem="t3s-my-7U3" secondAttribute="bottom" id="DkF-ke-tCN"/>
+                            <constraint firstItem="t3s-my-7U3" firstAttribute="top" secondItem="47B-xW-8JN" secondAttribute="top" id="f1J-Sj-ciQ"/>
+                            <constraint firstItem="47B-xW-8JN" firstAttribute="trailing" secondItem="t3s-my-7U3" secondAttribute="trailing" constant="5" id="ndf-me-ME5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="47B-xW-8JN"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableJobs" destination="t3s-my-7U3" id="p9a-j8-lqd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f9g-2r-mlx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1888.8" y="-564.46776611694156"/>
+        </scene>
+    </scenes>
+</document>

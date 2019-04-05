@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (4.8.2)
+  - AlamofireImage (3.5.2):
+    - Alamofire (~> 4.8)
+  - GooglePlacesSearchController (0.2.1)
+  - NVActivityIndicatorView (4.7.0):
+    - NVActivityIndicatorView/Presenter (= 4.7.0)
+  - NVActivityIndicatorView/Presenter (4.7.0)
+  - ObjectMapper (3.4.2)
+  - PMAlertController (4.0.0)
+  - R.swift (5.0.3):
+    - R.swift.Library (~> 5.0.0)
+  - R.swift.Library (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - GooglePlacesSearchController
+  - NVActivityIndicatorView
+  - ObjectMapper
+  - PMAlertController
+  - R.swift
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
+  GooglePlacesSearchController: e53b61b7497cf40cb18ec296b1d3314c11c0a1c0
+  NVActivityIndicatorView: b19ddab2576f805cbe0fb2306cba3476e09a1dea
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  PMAlertController: 5fad2da8b9eb687134ed50c3462fed12c3afe976
+  R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
+  R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
+
+PODFILE CHECKSUM: c1e6f736f3f8b9a5bad72a128cc4f555bb579ae0
+
+COCOAPODS: 1.4.0

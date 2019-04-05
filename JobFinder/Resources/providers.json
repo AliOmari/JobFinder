@@ -1,0 +1,45 @@
+[{
+    "displayName": "Github",
+    "searchBaseUrl": "https://jobs.github.com/positions.json",
+    "httpMethod": "GET",
+    "searchUrlParameterKeys": {
+        "lat": "lat",
+        "lng": "long",
+        "latLng": null,
+        "position": "description",
+        "pageSize": null,
+        "pagination": "page",
+        "fromRecord": null
+    },
+    "searchJobResponseParamterKeys": {
+        "companyLogo": "company_logo",
+        "jobTitle": "title",
+        "companyName": "company",
+        "location": "location",
+        "postDate": "created_at",
+        "postDateFormat": "EEE MMM dd HH:mm:ss Z yyyy",
+        "url": "url"
+    }
+}, {
+    "displayName": "search.gov",
+    "searchBaseUrl": "https://jobs.search.gov/jobs/search.json",
+    "httpMethod": "GET",
+    "searchUrlParameterKeys": {
+        "lat": null,
+        "lng": null,
+        "latLng": "lat_lon",
+        "position": "query",
+        "pageSize": "size",
+        "pagination": null,
+        "fromRecord": "from"
+    },
+    "searchJobResponseParamterKeys": {
+        "companyLogo": null,
+        "jobTitle": "position_title",
+        "companyName": "organization_name",
+        "location": "locations",
+        "postDate": "start_date",
+        "postDateFormat": "yyyy-MM-dd",
+        "url": "url"
+    }
+}]

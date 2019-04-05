@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  JobFinder
+
+  Created by Ali Omari on 4/5/19.
+  Copyright © 2019 Ali Omari. All rights reserved.
+*/
+"error_title" = "Error";
+"ok_title" = "Ok";
+"ops_title" = "Opps";
+"no_jobs_found" = "There's no jobs";
+"error_open_url_desc" = "Can't open url";
+"assert_must_not_be_nil" = "this value must not be nil";
